@@ -1,3 +1,4 @@
+import InstallAppButton from "@/components/Apps/InstallAppButton";
 import { getAllApp } from "@/lib/apps";
 import { IApp } from "@/types/apps.type";
 import Image from "next/image";
@@ -99,6 +100,11 @@ const AppDetails = async ({ params }: IAppDetailsProps) => {
               </div>
             </div>
 
+             {/* Install Button */}
+            {/* <button className="mt-6 rounded-lg bg-primary px-6 py-3 text-white transition-colors hover:bg-primary-focus">
+              Install
+            </button> */}
+            <InstallAppButton app={app} />
          
           </div>
         </div>
