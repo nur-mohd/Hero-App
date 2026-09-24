@@ -1,12 +1,12 @@
-import { TApp } from "@/types/apps.type";
+import { IApp } from "@/types/apps.type";
 import Image from "next/image";
 import Link from "next/link";
 
-type TAppProps = {
-  app: TApp;
+type IAppProps = {
+  app: IApp;
 };
 
-const AppCard = ({ app }: TAppProps) => {
+const AppCard = ({ app }: IAppProps) => {
   return (
     <div>
       <div className="group w-full max-w-md rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">

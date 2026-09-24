@@ -1,11 +1,8 @@
 import { IApp } from "@/types/apps.type";
 import AppCard from "../shared/AppCard";
+import { getAllApp } from "@/lib/apps";
 
-const getAllApp = async () => {
-    const res = await fetch("http://localhost:3000/data.json");
-    const data = await res.json();
-    return data;
-}
+
 
 const TrendingApp = async () => {
     const data = await getAllApp();
